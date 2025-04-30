@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_app/pages/welcome_page.dart';
 
 void main() {
@@ -12,7 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        textTheme: GoogleFonts.varelaRoundTextTheme(),
+      ),
       home: WelcomePage(),
     );
   }

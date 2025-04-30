@@ -5,6 +5,17 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    final size = MediaQuery.of(context).size;
+    return Scaffold(
+      body: Stack(
+        children: [
+          SizedBox(
+            height: size.height,
+            width: size.width,
+            child: Image.asset('name'),
+          ),
+        ],
+      ),
+    );
   }
 }
