@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
         textTheme: GoogleFonts.varelaRoundTextTheme(),
       ),
       home: WelcomePage(),
