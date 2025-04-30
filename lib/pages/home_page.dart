@@ -143,7 +143,7 @@ class _HomePageState extends State<HomePage> {
             // GridView of coffee items
             Padding(
               padding: const EdgeInsets.symmetric(
-                horizontal: 16.0,
+                horizontal: 8.0,
               ),
               child: GridView.builder(
                 shrinkWrap: true,
@@ -193,10 +193,8 @@ class _HomePageState extends State<HomePage> {
                                       vertical: 4,
                                     ),
                                 decoration: BoxDecoration(
-                                  color: Colors.black
-                                      .withValues(
-                                        alpha: 153,
-                                      ),
+                                  color:
+                                      Colors.brown.shade300,
                                   borderRadius:
                                       BorderRadius.circular(
                                         12,
@@ -220,7 +218,7 @@ class _HomePageState extends State<HomePage> {
                           coffee.name,
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                            fontSize: 18,
                           ),
                         ),
                         Text(
@@ -239,7 +237,7 @@ class _HomePageState extends State<HomePage> {
                               '\$${coffee.price.toStringAsFixed(2)}',
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                                fontSize: 18,
                               ),
                             ),
                             Container(
@@ -254,7 +252,10 @@ class _HomePageState extends State<HomePage> {
                                       10,
                                     ),
                               ),
-                              child: const Icon(Icons.add),
+                              child: const Icon(
+                                Icons.add,
+                                color: Colors.white,
+                              ),
                             ),
                           ],
                         ),
