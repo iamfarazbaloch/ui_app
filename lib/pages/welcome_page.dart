@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_app/pages/home_page.dart';
+import 'package:ui_app/pages/app_main_page.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -64,7 +64,7 @@ class WelcomePage extends StatelessWidget {
       onTap: () {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (_) => HomePage()),
+          MaterialPageRoute(builder: (_) => AppMainPage()),
         );
       },
       child: Container(
