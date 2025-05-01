@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:ui_app/widgets/search_field.dart';
-
 import '../model/coffee_model.dart' show listOfCoffee;
 
 class HomePage extends StatefulWidget {
